@@ -19,7 +19,7 @@ def quick_sort(array, start, end):
             right -= 1
         if left > right: # 엇갈린 경우 작은 데이터와 피벗을 교체
             array[right], array[pivot] = array[pivot], array[right]
-        else: # 엇갈리지 않은 경우 작은 데이터와 큰 데이터를 교ㅔ
+        else: # 엇갈리지 않은 경우 작은 데이터와 큰 데이터를 교체
             array[left], array[right] = array[right], array[left]
     # 분할 이후 왼쪽과 오른족에서 정렬 수행
     quick_sort(array, start, right - 1)
